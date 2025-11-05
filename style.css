@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    text-align: center;
+    background-color:rgb(237, 248, 239);
+}
+h1{
+    background-color: rgb(5, 5, 38);
+    color:white;
+    height:4rem;
+    line-height:4rem
+
+}
+.choices{
+    display:flex;    
+    justify-content:center;
+    gap:3rem;
+    margin-top:3rem;
+}
+.choices img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;     
+    border: 5px solid hsl(126, 37%, 44%);  
+    box-shadow: 0 0 1rem #645151;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.3s;
+}
+.choices img:hover {
+    transform: scale(1.1);
+    border-color: #2e7d32;
+    box-shadow: 0 0 20px rgba(46, 125, 50, 0.8);
+} 
+.result_box{
+    display:none;
+    justify-content:center;
+    align-items: center;
+    gap:4rem;
+    margin-top:4rem;
+}
+.result_box.show{
+    display:flex;
+}
+.user, .bot { 
+    text-align: center;
+}
+.user img,.bot img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid  #469a4e;  
+    box-shadow: 0 0 1rem #bab7b7;
+    margin-top:2rem;
+}
+.user h2, .bot h2{
+    color:#530606;
+}
+.result{
+    font-size:2rem;
+    font-weight:bold;
+    margin-top:2rem;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    background: #f9f9f9;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.scoreboard{
+    display:flex;
+    justify-content:center;
+    margin-top:3rem;
+    gap:4rem
+}
+.score_card {
+    background: rgb(177, 218, 233);
+    padding: 1.5rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.score_card h3 {
+    background: none;  
+    font-size: 2rem;
+    font-weight: bold;
+    color: #464c6d;
+}
+.score_card span {
+  background: none;  
+  font-size: 2rem;
+  font-weight: bold;
+  color: #464c6d;
+}
+#reset {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: #469a4e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+#reset:hover {
+    background-color: #2d6a34;
+    transform: scale(1.05);
+}
